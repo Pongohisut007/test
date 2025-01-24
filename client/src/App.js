@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/nongao`);
+        const response = await axios.get("http://13.228.125.134/api/nongao");
         console.log(response.data)
       } catch (err) {
         console.error(err);

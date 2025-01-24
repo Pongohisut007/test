@@ -4,7 +4,7 @@ const app = express()
 
 app.use(cors())
 
-app.get('/nongao', function (req, res,) {
+app.get('/api/nongao', function (req, res,) {
   res.json({msg: 'This is CORS-enabled for all origins!'})
 })
 
