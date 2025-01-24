@@ -6,11 +6,6 @@ services:
     container_name: client
     ports:
       - "3000:3000"
-    volumes:
-      - ./client:/app
-      - /app/node_modules
-    environment:
-      - NODE_ENV=development
 
   server:
     build:
@@ -18,11 +13,7 @@ services:
     container_name: server
     ports:
       - "3001:3001"
-    volumes:
-      - ./server:/app
-      - /app/node_modules
-    environment:
-      - NODE_ENV=development
+
 
 
     
